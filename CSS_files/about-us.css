@@ -1,0 +1,12 @@
+html,body{overflow-x: hidden;overflow-y: auto;}
+#change-color{position:fixed;transition: 0.2s linear;z-index:1;}
+.side-list{position:fixed;z-index: 2;}
+.logo-sift{margin-top:-7%;margin-bottom:-6%;}
+
+.header{text-transform: capitalize; font-size:60px;}
+@media screen and (max-width:991px){
+    .card-3{display:none}
+}
+.header-part{height:300px;width:75%;border-radius:20px;}
+
+#creators{font: size 200px;}

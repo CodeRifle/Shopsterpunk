@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="icon" href="../SiteFavicon.png">
+  <!-- Title -->
+  <title>Logitech G102 Light Sync Gaming Mouse with Customizable RGB Lighting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS_files/Footer.css">
+  <link rel="stylesheet" href="ProductDetails.css">
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <link href="ProductDetailsJs.js">
+  <script src="ProductDetailsJs.js">
+
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#hideX").click(function () {
+        $("#Suggestions").slideToggle();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <div class="topnav">
+      <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search.." name="search" style="width: 75%;">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+      </div>
+      <a style="font-size:15px;cursor:pointer" onclick="openNav()"><img src="../Products/Hamburger_icon.svg.png" width="18px" height="18px"/></a>
+      <a href="../ShopsterPunk.html"><i class="fa fa-home"></i><b>HOME</b></a>
+      <a href="../login-form.html"><i class="fa fa-id-card"></i><b>PROFILE</b></a>
+      <a href="../Products/PaymentGateway/PaymentGateway.html"><i class="fa fa-cart-arrow-down"></i><b>CART</b></a>
+      <a href="../ShopsterPunk.html" style="all: unset"><img src="../SiteLogo.png" style="margin-left: 15%; width:20%; height: 50px; padding: 5px;"></a>
+    </div>
+  </header>
+
+  <!-- SideNav -->
+  <script language="javascript" type="text/javascript" src="../JS_files/SideNav.js"></script>
+
+  <div class="showcase">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="ImageX" src="products/4/1.jpg" width="500" height="500">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="ImageX" src="products/4/2.jpg" width="500" height="500">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="ImageX" src="products/4/3.jpg" width="500" height="500">
+    </div>
+
+
+
+    <div style="border: 3px solid black ">
+      <button id="next" onclick="plusSlides(1)"><i class="fa fa-arrow-left"></i></button>
+      <button style="float:right " id="next" onclick="plusSlides(-1)"><i class="fa fa-arrow-right"></i></button>
+
+    </div>
+    <br>
+    <div id="ButtonX">
+      <a href="PaymentGateway/PaymentGateway.html">
+        <button id="bx1"><b>BUY</b></button>
+        <button id="bx2"><b>ADD TO CART</b></button></a>
+
+    </div>
+
+  </div>
+
+  <div class="Infos">
+
+
+    <div class="InfoX">
+      <h1>Logitech G102 Light Sync Gaming Mouse with Customizable RGB Lighting</h1>
+      <hr>
+      <div id="PriceX"><b>
+          M.R.P.: ₹ 1,995.00
+          Price: ₹ 1,595.00
+          You Save: ₹ 400.00 (20%)
+          Inclusive of all taxes</b></div>
+      <hr>
+      <b style="font-size: 20px;">
+        <li>
+          COLORFUL LIGHTSYNC RGB : Play in colour with our most vibrant LIGHTSYNC RGB featuring colour wave effects that
+          are customisable across 16.8 million colours. 8,000 DPI sensor.
+        </li><br>
+        <li>
+          CLASSIC,GAMER TESTED DESIGN : Play comfortably and with total control. The simple 6-button layout and classic
+          gaming shape form a comfortable, time-tested and loved design
+        </li><br>
+        <li>
+          MECHANICAL SPRING BUTTON TENSIONING: Primary buttons are mechanical and tensioned with durable metal springs
+          for reliability, performance and an excellent feel
+        </li><br>
+
+      </b>
+      <hr>
+
+
+    </div>
+    <div id="Suggestions"><b>
+        <img src="Main/acc/1.jpg" width="100px"><img src="Main/Electronics/3.jpg" width="100px">
+        <img src="Main/Men/2.jpg" width="100px"><img src="Main/Women/2.jpg" width="100px">
+    </div>
+    <button id="hideX">Hide/Show Suggestions</button>
+
+  </div>
+
+  <!-- Footer -->
+  <script language="javascript" type="text/javascript" src="../JS_files/Footer.js"></script>
+
+</body>
+
+</html>
