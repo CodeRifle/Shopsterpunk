@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="icon" href="SiteFavicon.png">
+  <!-- Title -->
+  <title>ShopsterPunk</title>
+  <!-- Important CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS_files/LowerTab.css">
+  <link rel="stylesheet" href="CSS_files/Footer.css">
+  <link rel="stylesheet" href="Slideshow/ssw.css">
+  <!-- Important JS Files -->
+  <script type="text/javascript" src="JS_files/ShopsterPunk.js"></script>
+  <script type="text/javascript" src="JS_files/tabs.js"></script>
+  <script type="text/javascript" src="Slideshow/ssw.js"></script>
+  <link rel="stylesheet" href="Products/ProductDetails.css">
+  
+</head>
+
+<body  style="background-image: url(bg.jpg); background-size: auto;">
+
+  <!--Header-->
+  <header>
+    <div class="topnav">
+      <div class="search-container">
+        <form">
+          <input type="text" id="myInput" placeholder="Search.." name="search" onkeyup="search()" onfocus="showSearch()"
+            style="width: 75%;">
+          <ul id="myUL" style="display: none;">
+            <li><a href="Products/1.html">Microsoft Xbox One Wireless Controller with Bluetooth (With 3.5 mm Jack)
+                (Black)</a></li>
+            <li><a href="Products/2.html">Samsung Galaxy M02s (Blue,3GB RAM, 32GB Storage) | 5000 mAh | Triple
+                Camera</a></li>
+            <li><a href="Products/3.html">Cosmic Byte Equinox Europa 7.1 USB Dual Driver Gaming Headset</a></li>
+            <li><a href="Products/4.html">Logitech G102 Light Sync Gaming Mouse with Customizable RGB Lighting</a></li>
+            <li><a href="Products/5.html">Diverse Men's Slim Formal Shirt</a></li>
+            <li><a href="Products/6.html">Diverse Men's Regular Formal Shirt</a></li>
+            <li><a href="Products/7.html">Ontarious Look Men's Cotton Digital Printed Half Sleeves Shirt</a></li>
+          </ul>
+          <button type="submit" onclick="hideSearch()"><i class="fa fa-search"></i></button>
+          </form>
+      </div>
+      <a style="font-size:15px;cursor:pointer" onclick="openNav()"><img src="Products/Hamburger_icon.svg.png"
+          width="18px" height="18px"></a>
+      <a href="ShopsterPunk.html"><i class="fa fa-home"></i><b>HOME</b></a>
+      <a href="login-form.html"><i class="fa fa-id-card"></i><b>PROFILE</b></a>
+      <a href="Products/PaymentGateway/PaymentGateway.html"><i class="fa fa-cart-arrow-down"></i><b>CART</b></a>
+      <a href="ShopsterPunk.html" style="all: unset;"><img src="SiteLogo.png"
+          style="margin-left: 250px; width: 250px; height: 60px; padding: 5px;" /></a>
+    </div>
+
+    <div>
+      <div class="tab">
+        <button class="tablinks" id="offers" onclick="openCity(event, 'London') ">OFFERS</button>
+        <button class="tablinks" id="sneakpeek" onclick="openCity(event, 'Paris')">SNEAK PEEK</button>
+        <button class="tablinks" id="products" onclick="openCity(event, 'Tokyo')">PRODUCTS</button>
+        <script>
+          document.getElementById("OpenDefault").click();
+        </script>
+      </div>
+    </div>
+  </header>
+
+  <!-- SideNav -->
+  <script language="javascript" type="text/javascript" src="JS_files/SideNav.js"></script>
+
+  <!-- Offers Section -->
+  <div id="London" class="tabcontent" style="height:100%; display: block;">
+
+    <div class="container">
+
+      <div class="mySlidesX">
+        <div class="numbertext">1 / 6</div>
+        <img src="Slideshow/img_woods_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesX">
+        <div class="numbertext">2 / 6</div>
+        <img src="Slideshow/img_5terre_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesX">
+        <div class="numbertext">3 / 6</div>
+        <img src="Slideshow/img_mountains_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesX">
+        <div class="numbertext">4 / 6</div>
+        <img src="Slideshow/img_lights_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesX">
+        <div class="numbertext">5 / 6</div>
+        <img src="Slideshow/img_nature_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesX">
+        <div class="numbertext">6 / 6</div>
+        <img src="Slideshow/img_snow_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="Slideshow/img_woods.jpg" style="width:100%" onclick="currentSlide(1)"
+            alt="Exclusive Offers">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Slideshow/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)"
+            alt="From Latest to Classics">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Slideshow/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)"
+            alt="All offers available are for limited period">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Slideshow/img_lights.jpg" style="width:100%" onclick="currentSlide(4)"
+            alt="Limited Deals">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Slideshow/img_nature.jpg" style="width:100%" onclick="currentSlide(5)"
+            alt="Buy Now">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Slideshow/img_snow.jpg" style="width:100%" onclick="currentSlide(6)"
+            alt="From Latest to Classics">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Sneak Peek Section -->
+  <div id="Paris" class="tabcontent">
+    <br>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>More Products on the way</h1>
+        <p>Vast variety of products will be available soon. You can always request for a product by going to request
+          section.</p>
+      </div>
+      <div class="jumbotron">
+        <h1>Collaboration</h1>
+        <p>We are happy to announce that world famous IIT Shinchan is collaborating with us to launch a more secure
+          payment gateway with great UI in next few months.</p>
+      </div>
+      <div class="jumbotron">
+        <h1>Security Breaches and Updates</h1>
+        <p>We value the privacy of our customer more than anything else. Till now there is no security breach reported
+          of our website.</p>
+        <p>You will be the first to know if there is any security breach.</p>
+      </div>
+      <!-- Request Portal -->
+      <div class="container" style="margin-left:25%; border-radius: 5px;">
+        <div style="width:50%;  background-color:rgb(86, 216, 205); height:300px; border-radius: 20px; ">
+          <hr>
+          <center>
+            <h3 style="color: white;">Request Portal</h3>
+            <hr style="border:2px solid black">
+            <input type="text" placeholder="Product Name"><br><br>
+            <input type="text" placeholder="Brand"><br><br>
+            <center><button style="width: 90px; height:30px;"><b>REQUEST</b></button></center>
+          </center>
+        </div>
+      </div>
+      <hr>
+      <!-- Creators Section -->
+      <div class="container" style="float:left">
+        <h2 id="creators" style="color:white; text-align:center;">Creators</h2>
+        <div class="card-group">
+          <div class="card bg-light">
+            <div class="card-body text-center" style="background-color: rgb(153, 56, 245);">
+              <img class="card-img-top" src="Malyaj.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Malyaj</h4>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-warning">
+            <div class="card-body text-center">
+              <img class="card-img-top" src="Rishabh.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Rishabh</h4>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-success">
+            <div class="card-body text-center">
+              <img class="card-img-top" src="Aniket.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Aniket</h4>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-danger">
+            <div class="card-body text-center">
+              <img class="card-img-top" src="Anirudh.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Anirudh</h4>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <div id="Tokyo" class="tabcontent">
+
+    <div class="tabsX">
+      <button class="tablinksX" onclick="openCityX(event, 'delhix')" id="defaultOpen">Electronics</button>
+      <button class="tablinksX" onclick="openCityX(event, 'Londonx')">Men's Clothing</button>
+      <button class="tablinksX" onclick="openCityX(event, 'Parisx')">Women's Clothing</button>
+      <button class="tablinksX" onclick="openCityX(event, 'Tokyox')">Tools and Accessories</button>
+    </div>
+
+    <div style="overflow:auto; height:570px;">
+      <div id="delhix" class="tabcontentX">
+        <div>
+          <a href="Products/1.html"><img src="Products/Main/Electronics/1.jpg" class="responsiveImg"></a>
+          <a href="Products/2.html"><img src="Products/Main/Electronics/2.jpg" class="responsiveImg"></a>
+          <a href="Products/3.html"><img src="Products/Main/Electronics/3.jpg" class="responsiveImg"></a>
+          <a href="Products/4.html"><img src="Products/Main/Electronics/4.jpg" class="responsiveImg"></a>
+
+        </div>
+      </div>
+      <div id="Londonx" class="tabcontentX">
+        <a href="Products/5.html"><img src="Products/Main/Men/1.jpg" class="responsiveImg"></a>
+        <a href="Products/6.html"><img src="Products/Main/Men/2.jpg" class="responsiveImg"></a>
+        <a href="Products/7.html"><img src="Products/Main/Men/3.jpg" class="responsiveImg"></a>
+        <a href="Products/8.html"><img src="Products/Main/Men/4.jpg" class="responsiveImg"></a>
+      </div>
+
+      <div id="Parisx" class="tabcontentX">
+        <a href="Products/9.html"><img src="Products/Main/Women/1.jpg" class="responsiveImg"></a>
+        <a href="Products/10.html"><img src="Products/Main/Women/2.jpg" class="responsiveImg"></a>
+        <a href="Products/11.html"><img src="Products/Main/Women/3.jpg" class="responsiveImg"></a>
+        <img src="Products/Main/Women/4.jpg" class="responsiveImg">
+      </div>
+
+      <div id="Tokyox" class="tabcontentX">
+        <a href="Products/13.html"><img src="Products/Main/acc/1.jpg" class="responsiveImg">
+          <img src="Products/Main/acc/2.jpg" class="responsiveImg"></a>
+        <img src="Products/Main/acc/3.jpg" class="responsiveImg">
+        <img src="Products/Main/acc/4.jpg" class="responsiveImg">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openCityX(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontentX");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinksX");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+  <!-- Footer -->
+  <script language="javascript" type="text/javascript" src="JS_files/Footer.js"></script>
+
+</body>
+
+</html>
